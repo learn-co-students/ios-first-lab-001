@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1DDB35EFD5F40A043CB167A3 /* libPods-my-first-labTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3E2D461CBC13E0A94A1B30 /* libPods-my-first-labTests.a */; };
+		891DCE211B61EA710088AB97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D838FFB31AF823DD0003B4E2 /* AppDelegate.m */; };
+		898434991B61DBB400F23EE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D838FFB31AF823DD0003B4E2 /* AppDelegate.m */; };
+		899D48C61B61DF340059365C /* AppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D838FFD41AF825180003B4E2 /* AppDelegateSpec.m */; };
 		D838FFB11AF823DD0003B4E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D838FFB01AF823DD0003B4E2 /* main.m */; };
-		D838FFB41AF823DD0003B4E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D838FFB31AF823DD0003B4E2 /* AppDelegate.m */; };
 		D838FFBC1AF823DD0003B4E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D838FFBB1AF823DD0003B4E2 /* Images.xcassets */; };
 		D838FFBF1AF823DD0003B4E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D838FFBD1AF823DD0003B4E2 /* LaunchScreen.xib */; };
-		D838FFD51AF825180003B4E2 /* AppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D838FFD41AF825180003B4E2 /* AppDelegateSpec.m */; };
 		D838FFD71AF825FC0003B4E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D838FFD61AF825FC0003B4E2 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -189,6 +190,7 @@
 				TargetAttributes = {
 					D838FFAA1AF823DD0003B4E2 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = Q37944AWTY;
 					};
 					D838FFC31AF823DE0003B4E2 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -273,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D838FFB41AF823DD0003B4E2 /* AppDelegate.m in Sources */,
+				898434991B61DBB400F23EE8 /* AppDelegate.m in Sources */,
 				D838FFB11AF823DD0003B4E2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D838FFD51AF825180003B4E2 /* AppDelegateSpec.m in Sources */,
+				891DCE211B61EA710088AB97 /* AppDelegate.m in Sources */,
+				899D48C61B61DF340059365C /* AppDelegateSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,9 +395,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "my-first-lab/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -402,9 +408,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "my-first-lab/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
